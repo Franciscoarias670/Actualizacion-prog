@@ -1,57 +1,83 @@
 /* html,body{
   overflow-x: hidden;
 } */
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto';
 }
-:root{
-  --amarillo:#FFE600;
-  --blanco:#ffffff;
-  --color-letras-ml:#2D3277;
+
+:root {
+  --amarillo: #FFE600;
+  --blanco: #ffffff;
+  --color-letras-ml: #2D3277;
 }
 
-.header{
+.header {
   background-color: var(--amarillo);
   height: 13vh;
   padding: 10px;
-  
+
 }
-.navbar{
+
+.navbar {
   background-color: white;
 }
 
-.img-logo{
+.img-logo {
   width: 150px;
   margin: 0;
 }
-.input-nav{
+
+.input-nav {
   max-width: 40vw;
 }
 
-.logo-mercadoplay{
+.input-nav button {
+  border: none;
+  border-radius: 2rem;
+}
+
+.input-nav i {
+  color: #4417ca;
+  background-color: #ffffff;
+  padding: 0.65rem;
+  border-radius: 2rem;
+}
+
+.logo-mercadoplay {
   width: 150px;
 }
 
-.texto-header{
+.texto-header {
   color: var(--color-letras-ml);
 }
 
-.texto-header p{
+.texto-header p {
   font-size: 1rem;
   font-weight: 500;
 }
 
-nav li a{
+.navbar {
+  background-color: #90c6ff;
+}
+
+.navbar a {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+nav li a {
   margin-left: 20px;
   margin-right: 20px;
 }
-.carrousel-ml{
+
+.carrousel-ml {
   padding-left: 0;
   padding-right: 0;
 }
+
 .carousel-inner img {
   width: 100%;
   height: 400px;
@@ -59,23 +85,24 @@ nav li a{
   object-fit: cover;
 }
 
-.carrousel-ml span{
+.carrousel-ml span {
   color: black;
   background-color: rgba(0, 0, 0, 0.456);
   padding: 1.5rem;
   border-radius: 50%;
 }
+
 /* ------------------- icono -------------------- */
-.iconos-header {
+/* .iconos-header {
   position: absolute;
   top: 30px;
   right: 30px;
   display: flex;
   gap: 20px;
-}
+} */
 
 .iconos-header a {
-  color: var(--color-letras-ml); /* o #333 si querés */
+  color: var(--color-letras-ml);
   font-size: 1.5rem;
   text-decoration: none;
   transition: color 0.3s;
@@ -83,6 +110,11 @@ nav li a{
 
 .iconos-header a:hover {
   color: #000;
+}
+
+.iconos-header i {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 /* ------------------- Fran card -------------------- */
@@ -147,7 +179,7 @@ nav li a{
   background-color: white;
   margin: auto;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   overflow: hidden;
 }
 
@@ -189,6 +221,7 @@ nav li a{
 .boton-beneficios:hover {
   background-color: #d4e0ff;
 }
+
 .beneficios {
   display: flex;
   justify-content: space-around;
@@ -205,7 +238,7 @@ nav li a{
   padding: 15px;
   background-color: #fafafa;
   border-radius: 12px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   gap: 15px;
 }
 
@@ -230,173 +263,166 @@ nav li a{
 /* ------------------- juli anuncios -------------------- */
 
 .card {
-    display: flex;
-    flex-direction: row;
-    width: 720px;
-    max-width: 100%;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    margin: 0;
-  }
-  
-  .left {
-    background-color: #5edbe3;
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-  }
-  
-  .peppa-img {
-    width: 20rem;
-    height: auto;
-    object-fit: contain;
-  }
-  
-  .right {
-    background-color: #f7e930;
-    flex: 1;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .max-logo {
-    width: 85px;
+  display: flex;
+  flex-direction: row;
+  width: 720px;
+  max-width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 0;
+}
+
+.left {
+  background-color: #5edbe3;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.peppa-img {
+  width: 20rem;
+  height: auto;
+  object-fit: contain;
+}
+
+.right {
+  background-color: #f7e930;
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.max-logo {
+  width: 85px;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.button {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  background-color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #f2f2f2;
+}
+
+.arrow {
+  font-size: 16px;
+}
+
+
+
+
+.red-box {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.social-icons img {
+  width: 24px;
+  margin: 0 6px;
+}
+
+.btn-white {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.btn-white:hover {
+  background-color: #e4e4e4;
+}
+
+a.text-white {
+  text-decoration: none;
+}
+
+a.text-white:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #ededed;
+  padding: 40px 20px 20px;
+  font-size: 14px;
+}
+
+.footer-links h5 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+  margin-top: 30px;
+  text-align: center;
+  color: #666;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  color: #333;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+@media (max-width: 576px) {
+  .footer-links {
     margin-bottom: 20px;
   }
-  
-  .subtitle {
-    font-size: 13px;
-    letter-spacing: 2px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .title {
-    font-size: 24px;
-    font-weight: bold;
-    color: #000;
-    margin-bottom: 20px;
-  }
-  
-  .button {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    background-color: white;
-    padding: 10px 16px;
-    border-radius: 6px;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    width: fit-content;
-    transition: background-color 0.3s;
-  }
-  
-  .button:hover {
-    background-color: #f2f2f2;
-  }
-  
-  .arrow {
-    font-size: 16px;
-  }
-  /* ---------------- footer lourdes
-  .footer-bg {
-      background-color: #2c2c2c;
-      color: white;
-      padding: 20px 0;
-    }
-
-    .footer-logo {
-      width: 100px;
-    }
-
-    .red-box {
-      background-color: red;
-      color: white;
-      padding: 10px;
-      border-radius: 5px;
-    }
-
-    .social-icons img {
-      width: 24px;
-      margin: 0 6px;
-    }
-
-    .btn-white {
-      background-color: white;
-      color: black;
-      border: none;
-      padding: 8px 12px;
-      border-radius: 5px;
-    }
-
-    .btn-white:hover {
-      background-color: #e4e4e4;
-    }
-
-    a.text-white {
-      text-decoration: none;
-    }
-
-    a.text-white:hover {
-      text-decoration: underline;
-    }
------------------ */
-   footer {
-      background-color: #ededed;
-      padding: 40px 20px 20px;
-      font-size: 14px;
-    }
-
-    .footer-links h5 {
-      font-weight: bold;
-      margin-bottom: 15px;
-    }
-
-    .footer-links ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    .footer-links ul li {
-      margin-bottom: 8px;
-    }
-
-    .footer-links ul li a {
-      color: #333;
-      text-decoration: none;
-    }
-
-    .footer-links ul li a:hover {
-      text-decoration: underline;
-    }
-
-    .footer-bottom {
-      border-top: 1px solid #ccc;
-      padding-top: 20px;
-      margin-top: 30px;
-      text-align: center;
-      color: #666;
-    }
-
-    .social-icons a {
-      margin-right: 10px;
-      color: #333;
-      font-size: 18px;
-      transition: color 0.3s;
-    }
-
-    .social-icons a:hover {
-      color: #007bff;
-    }
-
-    @media (max-width: 576px) {
-      .footer-links {
-        margin-bottom: 20px;
-      }
-    }
+}
