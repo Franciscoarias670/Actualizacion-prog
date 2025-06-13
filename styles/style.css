@@ -7,10 +7,11 @@
   box-sizing: border-box;
   font-family: 'Roboto';
 }
-:root{
-  --amarillo:#FFE600;
-  --blanco:#ffffff;
-  --color-letras-ml:#2D3277;
+
+:root {
+  --amarillo: #FFE600; v
+  --blanco: #ffffff;
+  --color-letras-ml: #2D3277;
 }
 
 .header {
@@ -341,6 +342,121 @@ nav li a {
       padding: 40px 20px 20px;
       font-size: 14px;
     }
+  display: flex;
+  flex-direction: row;
+  width: 720px;
+  max-width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 0;
+}
+
+.left {
+  background-color: #5edbe3;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.peppa-img {
+  width: 20rem;
+  height: auto;
+  object-fit: contain;
+}
+
+.right {
+  background-color: #f7e930;
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.max-logo {
+  width: 85px;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.button {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  background-color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #f2f2f2;
+}
+
+.arrow {
+  font-size: 16px;
+}
+
+
+
+
+.red-box {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.social-icons img {
+  width: 24px;
+  margin: 0 6px;
+}
+
+.btn-white {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.btn-white:hover {
+  background-color: #e4e4e4;
+}
+
+a.text-white {
+  text-decoration: none;
+}
+
+a.text-white:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #ededed;
+  padding: 40px 20px 20px;
+  font-size: 14px;
+}
 
 .footer-links h5 {
   font-weight: bold;
